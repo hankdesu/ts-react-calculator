@@ -5,15 +5,18 @@ import { Props } from '../../types/button';
 import './index.css';
 
 function Button(props: Props) {
-  const { onButtonClick, value } = props;
+  const { onButtonClick, value, children } = props;
 
   return (
-    <input
+    <button
       type="button"
+      aria-label="Click"
       className="button-container"
       onClick={onButtonClick}
       value={value}
-    />
+    >
+      {children}
+    </button>
   );
 }
 

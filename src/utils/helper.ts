@@ -37,4 +37,4 @@ export const calculateResult: Calculate = (num1, num2, operator, prevOperator) =
   return result;
 };
 
-export const empty = () => {};
+export const HELPER = 'HELPER';
